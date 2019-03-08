@@ -25,7 +25,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `yarn storybook`
 
-
+Launches Storybook on [http://localhost:9009](http://localhost:9009)
 
 ### `yarn build`
 
