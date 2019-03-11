@@ -1,0 +1,49 @@
+.title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 12px;
+  text-transform: capitalize;
+  margin-left: 2px;
+  margin-bottom: 2px;
+}
+
+.description {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 12px;
+  color: #b9b9b9;
+  margin-left: 2px;
+  margin-bottom: 6px;
+}
+
+.input {
+  border: 1px solid #858585;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+  color: #383838;
+}
+
+.input::placeholder {
+  color: #C7C7C7;
+}
+
+.input:focus {
+  border: 1px solid #3256D7;
+  outline: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
