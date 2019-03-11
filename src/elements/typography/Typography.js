@@ -13,12 +13,17 @@ const defaultVariantMapping = {
 };
 
 const Typography = props => {
-  const { variant, children } = props;
+  const { variant, children, className, ...rest } = props;
   const Component = defaultVariantMapping[variant] || 'span';
-  return <Component className={styles[variant]}>{children}</Component>;
+  return (
+    <Component {...rest} className={`${styles[variant]} ${className}`}>
+      {children}
+    </Component>
+  );
 };
 
 Typography.propTypes = {
+  children: PropTypes.string.isRequired,
   variant: PropTypes.oneOf([
     'title',
     'subtitle',
@@ -28,7 +33,11 @@ Typography.propTypes = {
     'description1',
     'description2',
   ]).isRequired,
-  children: PropTypes.string.isRequired,
+  className: PropTypes.string,
+};
+
+Typography.defaultProps = {
+  className: '',
 };
 
 export default Typography;
