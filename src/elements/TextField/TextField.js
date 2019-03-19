@@ -13,4 +13,9 @@ const TextField = props => {
   );
 };
 
+TextField.propTypes = {
+  description: PropTypes.string,
+  title: PropTypes.string,
+};
+
 export default TextField;
