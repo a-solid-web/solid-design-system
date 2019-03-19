@@ -18,4 +18,9 @@ TextField.propTypes = {
   title: PropTypes.string,
 };
 
+TextField.defaultProps = {
+  description: '',
+  title: '',
+};
+
 export default TextField;
