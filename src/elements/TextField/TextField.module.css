@@ -1,0 +1,53 @@
+@value colors: "../../style/colors.module.css";
+@value text-black, text-medium-grey, border-grey, blue-main from colors;
+
+.title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 12px;
+  text-transform: capitalize;
+  margin-left: 2px;
+  margin-bottom: 2px;
+  color: text-black;
+}
+
+.description {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 12px;
+  margin-left: 2px;
+  margin-bottom: 6px;
+  color: text-medium-grey;
+}
+
+.input {
+  border: 1px solid border-grey;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+  color: background-black;
+}
+
+.input::placeholder {
+  color: #C7C7C7;
+}
+
+.input:focus {
+  border: 1px solid blue-main;
+  outline: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

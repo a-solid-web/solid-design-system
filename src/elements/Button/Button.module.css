@@ -1,0 +1,69 @@
+@value colors: "../../style/colors.module.css";
+@value blue-main, blue-highlight, blue-shadow, blue-disabled from colors;
+
+.button {
+  border: 1px solid;
+  border-radius: 4px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: normal;
+  text-align: center;
+
+  padding: 12px 12px;
+  min-width: 200px;
+
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:disabled {
+  cursor: default;
+  transition: 200ms;
+}
+
+.button-contained {
+  background-color: blue-main;
+  border-color: blue-main;
+  color: white;
+}
+
+.button-contained:hover {
+  background-color: blue-highlight;
+  border-color: blue-highlight;
+  transition: 200ms;
+}
+
+.button-contained:active {
+  background-color: blue-shadow;
+  border-color: blue-shadow;
+  transition: 200ms;
+}
+
+.button-contained:disabled {
+  background-color: blue-disabled;
+  border-color: blue-disabled;
+}
+
+.button-outlined {
+  background-color: white;
+  color: blue-main;
+  border-color: blue-main;
+}
+
+.button-outlined:active {
+  background-color: #EDEDED;
+  border-color: #EDEDED;
+  transition: 200ms;
+}
+
+.button-outlined:disabled {
+  color: blue-disabled;
+  border-color: blue-disabled;
+}
