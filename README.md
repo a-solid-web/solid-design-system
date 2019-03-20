@@ -1,4 +1,4 @@
-# Solid Design System
+# Yoda Design System
 
 This is the repository for the React components of the design system for use in the apps of `a-solid-web` (or yoda). It is still in development (v0.0.1), so use it with caution. Not all components are ready and we will release them gradually.
 
