@@ -8810,4 +8810,4 @@ yargs@^11.0.0:
     yargs-parser "^9.0.2"
 
 "yoda-design-system@file:..":
-  version "0.0.1-alpha"
+  version "0.0.2-alpha"
