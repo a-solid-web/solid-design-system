@@ -19,7 +19,8 @@ const ListItem = props => {
 
 ListItem.propTypes = {
   head: PropTypes.bool,
-  children: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
+    .isRequired,
   className: PropTypes.string,
   selected: PropTypes.bool,
 };
